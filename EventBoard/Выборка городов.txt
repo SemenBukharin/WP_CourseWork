@@ -1,0 +1,8 @@
+<?
+                            $res = mysql_query('select `id`, `name` from `books`');
+                            while($row = mysql_fetch_assoc($res)){
+                                ?>
+                                <option value="<?=$row['id']?>"><?=$row['name']?></option>
+                                <?
+                            }
+                            ?>
